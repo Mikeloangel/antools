@@ -1,3 +1,12 @@
 // base colors
-
 $bg-color: #1E252B;
+$bg-color-secondary: #283036;
+
+$text-color-main: rgba(255, 255, 255, 1);
+$text-color-shadowed: rgba(255, 255, 255, 0.9);
+$text-color-light: rgba(255, 255, 255, 0.55);
+
+$button-bg: #FF6E30;
+
+// transitions
+$transition-main: all 300ms ease-in;

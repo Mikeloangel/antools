@@ -1,0 +1,25 @@
+.button {
+  padding: 14px 28px;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+  background-color: transparent;
+
+  color: $text-color-light;
+  font-weight: 600;
+  font-size: 16px;
+
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &_accent {
+    background-color: $button-bg;
+    color: $text-color-shadowed;
+
+    border-radius: 8px;
+    text-transform: capitalize;
+  }
+}

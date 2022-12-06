@@ -1,2 +1,17 @@
-@import "./styles/vendor/normalize.css", "./styles/vendor/fonts.css", "./styles/utils/variables.scss",
-  "./styles/utils/mixins.scss", "./styles/root.scss";
+// vendor
+@import "./styles/vendor/normalize.css";
+@import "./styles/vendor/fonts.css";
+
+// scss variables and mixins
+@import "./styles/utils/variables.scss";
+@import "./styles/utils/mixins.scss";
+
+// blocks
+@import "./styles/root.scss";
+@import "./styles/section-top.scss";
+@import "./styles/header.scss";
+@import "./styles/button.scss";
+
+*{
+  // outline: 1px dashed lime;
+}
