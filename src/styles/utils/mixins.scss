@@ -1,0 +1,17 @@
+@mixin greadientBorder() {
+  background: linear-gradient(#232a2f, #232a2f) padding-box,
+    linear-gradient(
+        to right,
+        rgba(256, 256, 256, 0.08),
+        rgba(256, 256, 256, 0.02),
+        rgba(256, 256, 256, 0.05),
+        rgba(256, 256, 256, 0.02)
+      )
+      border-box;
+}
+
+@mixin gradientBorderSetUp($borderwidth: 2px, $borderradius: 15px) {
+  border-radius: $borderradius;
+  border: $borderwidth solid transparent;
+  overflow: hidden;
+}

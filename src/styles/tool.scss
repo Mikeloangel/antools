@@ -6,9 +6,7 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 0 30px;
 
-  border-radius: 15px;
-  border: 2px solid transparent;
-  overflow: hidden;
+  @include gradientBorderSetUp();
 
   transition: $transition-main;
 
@@ -151,17 +149,10 @@
 
   &:hover {
     transform: translateY(-20px);
+
     position: relative;
 
-    background: linear-gradient(#232a2f, #232a2f) padding-box,
-      linear-gradient(
-          to right,
-          rgba(256, 256, 256, 0.08),
-          rgba(256, 256, 256, 0.02),
-          rgba(256, 256, 256, 0.05),
-          rgba(256, 256, 256, 0.02)
-        )
-        border-box;
+    @include greadientBorder();
 
     &::after {
       content: "";
