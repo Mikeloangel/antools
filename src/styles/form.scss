@@ -7,7 +7,7 @@
   @include gradientBorderSetUp();
 
   background: linear-gradient(#232a2f, #232a2f) padding-box,
-  linear-gradient(to right, rgba(256, 256, 256, 0.1), rgba(256, 256, 256, 0))  border-box;
+    linear-gradient(to right, rgba(256, 256, 256, 0.1), rgba(256, 256, 256, 0)) border-box;
 
   display: flex;
   justify-content: space-between;
@@ -41,5 +41,29 @@
     color: $text-color-light;
 
     padding-block: 10px;
+  }
+
+  &__submit {
+    padding: 14px 28px;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+    background-color: transparent;
+
+    color: $text-color-light;
+    font-weight: 600;
+    font-size: 16px;
+
+    cursor: pointer;
+
+    background-color: $color-accent;
+    color: $text-color-shadowed;
+
+    border-radius: 8px;
+    text-transform: capitalize;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

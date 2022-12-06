@@ -1,0 +1,31 @@
+.join {
+  max-width: 553px;
+  margin: 0 auto;
+  padding-bottom: 240px;
+
+  &__title {
+    padding: 0 0 20px 0;
+    margin: 0;
+    text-align: center;
+
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 1.3;
+
+    color: $text-color-shadowed;
+  }
+
+  &__description {
+    padding: 0 0 100px 0;
+    margin: 0 auto;
+    text-align: center;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.67;
+
+    color: $text-color-light;
+
+    max-width: 80%;
+  }
+}
