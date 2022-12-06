@@ -1,0 +1,82 @@
+.footer {
+  border-top: 0.5px solid rgba(255, 255, 255, 0.15);
+  padding: 70px 110px 90px 110px;
+
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+
+  &__copy {
+    flex-basis: 260px;
+  }
+
+  &__logo {
+    padding-bottom: 25px;
+  }
+
+  &__smallprint {
+    padding: 0 0 21px 0;
+    margin: 0;
+
+    font-weight: 500;
+    font-size: 16px;
+
+    color: $text-color-shadowed;
+  }
+
+  &__moto {
+    padding: 0;
+    margin: 0;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.79;
+
+    color: $text-color-light;
+  }
+
+  &__contact {
+    padding-left: 140px;
+  }
+
+  &__title {
+    padding: 0 0 20px 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+
+    color: $text-color-shadowed;
+    text-transform: capitalize;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &-item,
+    &-link {
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+      color: $text-color-light;
+      text-transform: capitalize;
+    }
+
+    &-link:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    gap: 120px;
+    justify-content: flex-start;
+
+    padding-left: 90px;
+  }
+}

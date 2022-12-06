@@ -19,25 +19,6 @@
     }
   }
 
-  &__logo {
-    background-image: url(~/src/images/logo.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 38px;
-    height: 38px;
-
-    &-text {
-      padding: 0;
-      margin: 0;
-
-      color: $text-color-main;
-      font-weight: 600;
-      font-size: 22px;
-      line-height: 1.5;
-    }
-  }
-
   &__nav {
     padding-left: 90px;
 
@@ -104,7 +85,7 @@
           transform: rotate(90deg);
         }
 
-        &:hover .header__nav-list_sub {
+        &:hover .menu__nav-list_sub {
           display: block;
         }
       }
