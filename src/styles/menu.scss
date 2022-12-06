@@ -1,0 +1,113 @@
+.menu {
+  display: grid;
+  grid-template-columns: min-content auto auto;
+
+  justify-content: space-between;
+  align-items: center;
+
+  &__cell {
+    &-logo {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    &-account {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+  }
+
+  &__logo {
+    background-image: url(~/src/images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 38px;
+    height: 38px;
+
+    &-text {
+      padding: 0;
+      margin: 0;
+
+      color: $text-color-main;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 1.5;
+    }
+  }
+
+  &__nav {
+    padding-left: 90px;
+
+    &-list {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      list-style: none;
+
+      display: flex;
+      gap: 40px;
+
+      &_sub {
+        display: none;
+        position: absolute;
+        top: 30px;
+        left: 0;
+
+        flex-direction: column;
+        gap: 10px;
+
+        background-color: $bg-color-secondary;
+
+        padding: 10px 15px;
+        border-radius: 6px;
+      }
+    }
+
+    &-link {
+      color: $text-color-light;
+      text-decoration: none;
+      text-transform: capitalize;
+      font-size: 16px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &-item {
+      position: relative;
+
+      &_sub {
+        &::after {
+          content: "";
+          display: inline-block;
+          background-image: url(~/src/images/chevron-down.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          width: 18px;
+          height: 18px;
+
+          padding: 0;
+          margin: 0;
+          vertical-align: middle;
+          box-sizing: border-box;
+          cursor: pointer;
+
+          transition: $transition-main;
+        }
+
+        &:hover::after {
+          transform: rotate(90deg);
+        }
+
+        &:hover .header__nav-list_sub {
+          display: block;
+        }
+      }
+    }
+  }
+}

@@ -16,10 +16,20 @@
   }
 
   &_accent {
-    background-color: $button-bg;
+    background-color: $color-accent;
     color: $text-color-shadowed;
 
     border-radius: 8px;
     text-transform: capitalize;
+  }
+
+  &_form{
+    background-color: $color-accent;
+    color: $text-color-shadowed;
+
+    border-radius: 8px;
+    text-transform: capitalize;
+
+    padding: 14px 36px;
   }
 }

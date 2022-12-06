@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-  content="Antool is a web collection of information on paid or free Design and Development tools">
+    content="Antool is a web collection of information on paid or free Design and Development tools">
   <title>antools</title>
 
   <!-- basic FUOC font rendering fix (see release in index.js) -->
@@ -21,30 +21,66 @@
 
 <body class="root">
 
-<header class="section-top header">
-  <div class="header__cell-logo">
-    <div class="header__logo"></div>
-    <p class="header__logo-text">antools.</p>
-  </div>
-  <nav class="header__nav">
-    <ul class="header__nav-list">
-      <li class="header__nav-item"><a href="#" class="header__nav-link">Home</a></li>
-      <li class="header__nav-item header__nav-item_sub">
-        <a href="#" class="header__nav-link">Categories</a>
-        <ul class="header__nav-list header__nav-list_sub">
-          <li class="header__nav-item"><a href="#" class="header__nav-link">Tool</a></li>
-          <li class="header__nav-item"><a href="#" class="header__nav-link">Software</a></li>
-          <li class="header__nav-item"><a href="#" class="header__nav-link">Design</a></li>
+  <header class="section-top header">
+    <section class="menu">
+      <div class="menu__cell-logo">
+        <div class="menu__logo"></div>
+        <p class="menu__logo-text">antools.</p>
+      </div>
+      <nav class="menu__nav">
+        <ul class="menu__nav-list">
+          <li class="menu__nav-item"><a href="#" class="menu__nav-link">Home</a></li>
+          <li class="menu__nav-item menu__nav-item_sub">
+            <a href="#" class="menu__nav-link">Categories</a>
+            <ul class="menu__nav-list menu__nav-list_sub">
+              <li class="menu__nav-item"><a href="#" class="menu__nav-link">Tool</a></li>
+              <li class="menu__nav-item"><a href="#" class="menu__nav-link">Software</a></li>
+              <li class="menu__nav-item"><a href="#" class="menu__nav-link">Design</a></li>
+            </ul>
+          </li>
+          <li class="menu__nav-item"><a href="#" class="menu__nav-link">My collections</a></li>
+          <li class="menu__nav-item"><a href="#" class="menu__nav-link">Blog</a></li>
         </ul>
-      </li>
-      <li class="header__nav-item"><a href="#" class="header__nav-link">My collections</a></li>
-      <li class="header__nav-item"><a href="#" class="header__nav-link">Blog</a></li>
-    </ul>
-  </nav>
-  <div class="header__cell-account">
-    <button class="button">Login</button>
-    <button class="button button_accent">Sign up</button>
-  </div>
-</header>
+      </nav>
+      <div class="menu__cell-account">
+        <button class="button">Login</button>
+        <button class="button button_accent">Sign up</button>
+      </div>
+    </section>
+
+    <section class="hero">
+      <h1 class="hero__title">Awesome tools for Designer & Developer<span class="hero__accent">.</span></h1>
+      <p class="hero__paragraph">Antool is a web collection of information on paid or free Design and Development tools
+      </p>
+
+      <form class="hero__form form" name="search">
+        <div class="form__img form__img_search"></div>
+        <input class="form__input" type="text" name="query" required placeholder="find more than 430+ tools...">
+        <button type="submit" class="button button_form">search</button>
+      </form>
+
+      <ul class="hero__social">
+        <li class="hero__social-item">
+          <a href="#" class="hero__social-link">
+            <img src="<%=require('./images/ico-fb.png')%>" alt="Follow on Facebook" class="hero__social-ico">
+          </a>
+        </li>
+        <li class="hero__social-item">
+          <a href="#" class="hero__social-link">
+            <img src="<%=require('./images/ico-ins.png')%>" alt="Follow on Instagram" class="hero__social-ico">
+          </a>
+        </li>
+        <li class="hero__social-item">
+          <a href="#" class="hero__social-link">
+            <img src="<%=require('./images/ico-twitter.png')%>" alt="Follow on Twitter" class="hero__social-ico">
+          </a>
+        </li>
+      </ul>
+    </section>
+  </header>
+
+  <main class="section-top">
+
+  </main>
 
 </html>
