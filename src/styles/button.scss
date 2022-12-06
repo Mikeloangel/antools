@@ -23,7 +23,7 @@
     text-transform: capitalize;
   }
 
-  &_form{
+  &_form {
     background-color: $color-accent;
     color: $text-color-shadowed;
 
@@ -31,5 +31,18 @@
     text-transform: capitalize;
 
     padding: 14px 36px;
+  }
+
+  &_transparent-accent {
+    background: $bg-color;
+    border: 1px solid $text-color-thin;
+    border-radius: 8px;
+
+    font-weight: 500;
+    font-size: 20px;
+
+    color: $color-accent;
+
+    padding: 18px 38px;
   }
 }

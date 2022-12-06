@@ -4,9 +4,13 @@ $bg-color-secondary: #283036;
 
 $text-color-main: rgba(255, 255, 255, 1);
 $text-color-shadowed: rgba(255, 255, 255, 0.9);
+$text-color-medium: rgba(255, 255, 255, 0.78);
 $text-color-light: rgba(255, 255, 255, 0.55);
+$text-color-thin: rgba(255, 255, 255, 0.1);
 
 $color-accent: #FF6E30;
+$color-accent-secondary:#FFA537;
+$color-accent-dull: rgba(255, 165, 55, 0.55);
 
 // transitions
 $transition-main: all 300ms ease-in;
