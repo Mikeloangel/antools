@@ -5,7 +5,7 @@ Test task for DevCrew
 
 Non responsible web layout from figma desgign.
 
-![Figma layout](https://i.ibb.co/pLqXM3S/Screenshot-2022-12-06-at-13-37-21.png)
+![Figma layout](https://i.postimg.cc/L8m7cvtP/Screenshot-2022-12-07-at-15-51-54.png)
 
 ## Tech stack
 * HTML
