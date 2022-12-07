@@ -5,12 +5,19 @@ import imgNotion from '../../images/fixtures/04-notion.png';
 import imgSlack from '../../images/fixtures/05-slack.png';
 import imgInvision from '../../images/fixtures/06-invision.png';
 
+import imgZeplin from '../../images/fixtures/11-zepelin.png';
+import imgPhpstorm from '../../images/fixtures/12-phpstorm.png';
+import imgToolbox from '../../images/fixtures/13-toolbox.png';
+import imgProcreate from '../../images/fixtures/14-procreate.png';
+
 import imgTestimonial from '../../images/fixtures/testimonial-portrait.png'
 
 /** Selectors */
 export const toolsWrapperSelector = 'popular__wrapper';
 export const toolsTemplateSelector = '#tool';
+export const toolsTemplateSelectorSecondary = '#toolNarrow';
 export const toolBtnMoreSelector = '#btn-load-more';
+export const newcomerWrapperSelector = 'newcomer__wrapper';
 
 /** Hardcode initial data */
 
@@ -85,5 +92,41 @@ export const testimonialList = [
     position: 'PM senior',
     description: 'Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cill',
     img: imgTestimonial,
+  },
+];
+
+// newcomer section tools
+export const toolsListNewcomer = [
+  {
+    name: 'Zeplin',
+    tier: 'Free & Paid',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    img: imgZeplin,
+    link: 'https://zeplin.io/',
+    isLiked: false
+  },
+  {
+    name: 'PHPStorm',
+    tier: 'Free',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    img: imgPhpstorm,
+    link: 'https://www.jetbrains.com/phpstorm/',
+    isLiked: false
+  },
+  {
+    name: 'Toolbox',
+    tier: 'Free',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    img: imgToolbox,
+    link: 'https://www.jetbrains.com/toolbox-app/',
+    isLiked: false
+  },
+  {
+    name: 'Procreate',
+    tier: 'Paid',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    img: imgProcreate,
+    link: 'https://procreate.com/',
+    isLiked: false
   },
 ];

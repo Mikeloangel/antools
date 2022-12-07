@@ -8,8 +8,11 @@ import {
   toolList,
   toolsWrapperSelector,
   toolsTemplateSelector,
+  toolsTemplateSelectorSecondary,
   toolBtnMoreSelector,
   testimonialList,
+  newcomerWrapperSelector,
+  toolsListNewcomer
 } from './scripts/utils/data';
 
 // styles and images
@@ -23,7 +26,7 @@ const toolSection = new Section(
   {
     items: toolList,
     renderer: (toolItem) => {
-      const newToolElement = createTool(toolItem);
+      const newToolElement = createTool(toolItem, toolsTemplateSelector);
       toolSection.addItem(newToolElement);
     }
   },
@@ -32,26 +35,39 @@ const toolSection = new Section(
 
 toolSection.render();
 
+// Secondary tools section
+const toolsNewComer = new Section({
+  items: toolsListNewcomer,
+  renderer: (toolItem) => {
+    const newToolElement = createTool(toolItem, toolsTemplateSelectorSecondary);
+    toolsNewComer.addItem(newToolElement);
+  }
+}, newcomerWrapperSelector);
+
+toolsNewComer.render();
+
+// tool_narrow
+
 /* Slider init */
 const sliderTestimonial = new Slider({});
 sliderTestimonial.loadCards(testimonialList);
 
 /* Functions */
-// creates new instance of Card
-function createTool(item) {
+// creates new instance of Card and returns its template
+function createTool(item, templateSelector) {
   const newTool = new Card(
     item,
-    toolsTemplateSelector,
+    templateSelector,
   );
 
   return newTool.createCard();
 }
 
-function handleBtnMoreTool(){
+function handleBtnMoreTool() {
   // HARDCODE: adds initial cards to Section
   toolSection.concatItems(toolList);
   toolSection.render();
 }
 
 // event listeners
-toolBtnMoreElement.addEventListener('click',handleBtnMoreTool);
+toolBtnMoreElement.addEventListener('click', handleBtnMoreTool);

@@ -4,7 +4,7 @@
 export default class Card {
   /**
    *
-   * @param {Object} data object with form settings (name and link)
+   * @param {Object} data object with card fields
    * @param {String} templateSelector selector name
    */
 
@@ -36,7 +36,7 @@ export default class Card {
     this._likeElement.addEventListener('click', this.toggleLike.bind(this));
   }
 
-  toggleLike(){
+  toggleLike() {
     this._isLiked = !this._isLiked;
     this.renderLike();
   }
