@@ -11,6 +11,8 @@
 
     transition: $transition-main;
 
+    padding-bottom: 34px;
+
     height: 100%;
 
     &:hover {
@@ -28,6 +30,7 @@
   }
 
   &__wrapper {
+    padding-top: 60px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
@@ -123,7 +126,7 @@
       top: -50px;
       left: -50px;
       width: 100%;
-      height: 100%;
+      min-height: 200px;
 
       z-index: -1;
 

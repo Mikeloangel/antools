@@ -10,6 +10,10 @@
 
   transition: $transition-main;
 
+  &_narrow{
+    padding: 28px 21px;
+  }
+
   &__img {
     grid-column: 1/2;
     grid-row: 1/3;

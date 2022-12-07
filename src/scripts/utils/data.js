@@ -21,7 +21,7 @@ export const toolList = [
     tier: 'Free',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     img: imgFigma,
-    link: 'ya.ru',
+    link: 'https://figma.com/',
     isLiked: false
   },
   {
@@ -29,7 +29,7 @@ export const toolList = [
     tier: 'Trial & Paid',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     img: imgSketch,
-    link: '',
+    link: 'https://www.sketch.com/',
     isLiked: false
   },
   {
@@ -37,7 +37,7 @@ export const toolList = [
     tier: 'Free',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     img: imgVsc,
-    link: '',
+    link: 'https://code.visualstudio.com/',
     isLiked: false
   },
   {
@@ -45,7 +45,7 @@ export const toolList = [
     tier: 'Free & Paid',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     img: imgNotion,
-    link: '',
+    link: 'https://notion.so/',
     isLiked: false
   },
   {
@@ -53,7 +53,7 @@ export const toolList = [
     tier: 'Free & Paid',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     img: imgSlack,
-    link: '',
+    link: 'https://slack.com/',
     isLiked: true
   },
   {
@@ -61,7 +61,7 @@ export const toolList = [
     tier: 'Free & Paid',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     img: imgInvision,
-    link: '',
+    link: 'https://www.invisionapp.com/',
     isLiked: false
   },
 ];
