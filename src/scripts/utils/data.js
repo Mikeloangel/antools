@@ -1,3 +1,4 @@
+// popular tools images
 import imgFigma from '../../images/fixtures/01.png';
 import imgSketch from '../../images/fixtures/02-sketch.png';
 import imgVsc from '../../images/fixtures/03-vsc.png';
@@ -5,11 +6,14 @@ import imgNotion from '../../images/fixtures/04-notion.png';
 import imgSlack from '../../images/fixtures/05-slack.png';
 import imgInvision from '../../images/fixtures/06-invision.png';
 
+
+// newcomer tools images
 import imgZeplin from '../../images/fixtures/11-zepelin.png';
 import imgPhpstorm from '../../images/fixtures/12-phpstorm.png';
 import imgToolbox from '../../images/fixtures/13-toolbox.png';
 import imgProcreate from '../../images/fixtures/14-procreate.png';
 
+// testimonial portrait
 import imgTestimonial from '../../images/fixtures/testimonial-portrait.png'
 
 /** Selectors */
@@ -21,7 +25,7 @@ export const newcomerWrapperSelector = 'newcomer__wrapper';
 
 /** Hardcode initial data */
 
-// tool items list
+// popular tool items list
 export const toolList = [
   {
     name: 'Figma',
@@ -95,7 +99,7 @@ export const testimonialList = [
   },
 ];
 
-// newcomer section tools
+// newcomer tool items list
 export const toolsListNewcomer = [
   {
     name: 'Zeplin',

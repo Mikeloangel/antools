@@ -15,7 +15,7 @@ import {
   toolsListNewcomer
 } from './scripts/utils/data';
 
-// styles and images
+// styles
 import './index.scss';
 
 // buttons
@@ -45,8 +45,6 @@ const toolsNewComer = new Section({
 }, newcomerWrapperSelector);
 
 toolsNewComer.render();
-
-// tool_narrow
 
 /* Slider init */
 const sliderTestimonial = new Slider({});

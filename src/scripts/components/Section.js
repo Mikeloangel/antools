@@ -8,7 +8,7 @@ export default class Section {
    * @param {String} sectionSelector
    */
   constructor({ items, renderer }, sectionSelector) {
-    // somwhat virtual DOM to decide to render or not new element based on keys
+    // somwhat virtual DOM to make decision do we need to render item based on keys
     this._renderedItemsKeys = [];
     // adds keys to new items
     this._items = this._generateKey(items);
