@@ -4,7 +4,9 @@
   margin: 0;
   box-sizing: border-box;
 
-  @include gradientBorderSetUp();
+  border-radius: 15px;
+  border: 2px solid transparent;
+  overflow: hidden;
 
   background: linear-gradient(#232a2f, #232a2f) padding-box,
     linear-gradient(to right, rgba(256, 256, 256, 0.1), rgba(256, 256, 256, 0)) border-box;

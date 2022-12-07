@@ -6,11 +6,13 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 0 30px;
 
-  @include gradientBorderSetUp();
+  border-radius: 15px;
+  border: 2px solid transparent;
+  overflow: hidden;
 
   transition: $transition-main;
 
-  &_narrow{
+  &_narrow {
     padding: 28px 21px;
   }
 
@@ -101,12 +103,12 @@
       background-image: url(~/src/images/like.png);
     }
 
-    &_liked{
+    &_liked {
       background-image: url(~/src/images/like-enable.png);
       position: relative;
 
-      &::after{
-        content: '';
+      &::after {
+        content: "";
         position: absolute;
         border-radius: 8px;
 
@@ -152,7 +154,15 @@
 
     position: relative;
 
-    @include greadientBorder();
+    background: linear-gradient(#232a2f, #232a2f) padding-box,
+      linear-gradient(
+          to right,
+          rgba(256, 256, 256, 0.08),
+          rgba(256, 256, 256, 0.02),
+          rgba(256, 256, 256, 0.05),
+          rgba(256, 256, 256, 0.02)
+        )
+        border-box;
 
     &::after {
       content: "";

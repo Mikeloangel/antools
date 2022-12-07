@@ -70,27 +70,33 @@
     align-self: end;
     justify-self: end;
 
-    background: linear-gradient(#232a2f, #232a2f) padding-box,
-      linear-gradient(
-          to right,
-          rgba(256, 256, 256, 0.08),
-          rgba(256, 256, 256, 0.02),
-          rgba(256, 256, 256, 0.05),
-          rgba(256, 256, 256, 0.02)
-        )
-        border-box;
-
-    backdrop-filter: blur(2px);
-
-    border-radius: 8px;
-    border: 2px solid transparent;
-    overflow: hidden;
-
     padding: 12px 20px;
     box-sizing: border-box;
-
     margin-bottom: 30px;
     margin-right: 10px;
+
+    position: relative;
+    overflow: hidden;
+
+    background: rgba(60, 60, 60, 0.11);
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(17px);
+    border: 1px solid $text-color-thin;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: -10px;
+      bottom: -10px;
+      width: 33px;
+      height: 33px;
+      z-index: -1;
+      background: #007acc;
+      border-radius: 50%;
+      filter: blur(15px);
+      opacity: .7;
+    }
   }
 
   &__name {
