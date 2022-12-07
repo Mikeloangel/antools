@@ -12,7 +12,6 @@
   <!-- basic FUOC font rendering fix (see release in index.js) -->
   <style>
     body {
-      background-color: #0E1014;
       visibility: hidden;
     }
   </style>
@@ -86,72 +85,7 @@
         most popularly used in the world
       </h3>
       <div class="popular__wrapper">
-        <article class="tool">
-          <img src="<%=require('./images/tool-figma.svg')%>" alt="Figma" class="tool__img">
-          <h2 class="tool__title">Figma</h2>
-          <p class="tool__tier">Free</p>
-          <p class="tool__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-          <div class="tool__wrapper">
-            <button class="tool__button tool__button_like tool__button_liked"></button>
-            <button class="tool__button tool__button_folder"></button>
-          </div>
-          <a href="#" class="tool__visit">Visit</a>
-        </article>
-        <article class="tool">
-          <img src="<%=require('./images/tool-figma.svg')%>" alt="Figma" class="tool__img">
-          <h2 class="tool__title">Figma</h2>
-          <p class="tool__tier">Free</p>
-          <p class="tool__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-          <div class="tool__wrapper">
-            <button class="tool__button tool__button_like"></button>
-            <button class="tool__button tool__button_folder"></button>
-          </div>
-          <a href="#" class="tool__visit">Visit</a>
-        </article>
-        <article class="tool">
-          <img src="<%=require('./images/tool-figma.svg')%>" alt="Figma" class="tool__img">
-          <h2 class="tool__title">Figma</h2>
-          <p class="tool__tier">Free</p>
-          <p class="tool__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-          <div class="tool__wrapper">
-            <button class="tool__button tool__button_like"></button>
-            <button class="tool__button tool__button_folder"></button>
-          </div>
-          <a href="#" class="tool__visit">Visit</a>
-        </article>
-        <article class="tool">
-          <img src="<%=require('./images/tool-figma.svg')%>" alt="Figma" class="tool__img">
-          <h2 class="tool__title">Figma</h2>
-          <p class="tool__tier">Free</p>
-          <p class="tool__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-          <div class="tool__wrapper">
-            <button class="tool__button tool__button_like"></button>
-            <button class="tool__button tool__button_folder"></button>
-          </div>
-          <a href="#" class="tool__visit">Visit</a>
-        </article>
-        <article class="tool">
-          <img src="<%=require('./images/tool-figma.svg')%>" alt="Figma" class="tool__img">
-          <h2 class="tool__title">Figma</h2>
-          <p class="tool__tier">Free</p>
-          <p class="tool__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-          <div class="tool__wrapper">
-            <button class="tool__button tool__button_like"></button>
-            <button class="tool__button tool__button_folder"></button>
-          </div>
-          <a href="#" class="tool__visit">Visit</a>
-        </article>
-        <article class="tool">
-          <img src="<%=require('./images/tool-figma.svg')%>" alt="Figma" class="tool__img">
-          <h2 class="tool__title">Figma</h2>
-          <p class="tool__tier">Free</p>
-          <p class="tool__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-          <div class="tool__wrapper">
-            <button class="tool__button tool__button_like"></button>
-            <button class="tool__button tool__button_folder"></button>
-          </div>
-          <a href="#" class="tool__visit">Visit</a>
-        </article>
+        <!-- inserts #tool template -->
       </div>
       <button class="button button_transparent-accent " id="btn-load-more">Load more</button>
     </section>
@@ -184,8 +118,19 @@
       </div>
       <div class="newcomer__wrapper">
         <article class="tool">
-          <img src="<%=require('./images/tool-figma.svg')%>" alt="Figma" class="tool__img">
-          <h2 class="tool__title">Figma</h2>
+          <img src="<%=require('./images/fixtures/11-zepelin.png')%>" alt="Zeplin" class="tool__img">
+          <h2 class="tool__title">Zeplin</h2>
+          <p class="tool__tier">Free & Paid</p>
+          <p class="tool__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <div class="tool__wrapper">
+            <button class="tool__button tool__button_like"></button>
+            <button class="tool__button tool__button_folder"></button>
+          </div>
+          <a href="#" class="tool__visit">Visit</a>
+        </article>
+        <article class="tool">
+          <img src="<%=require('./images/fixtures/12-phpstorm.png')%>" alt="Phpstorm" class="tool__img">
+          <h2 class="tool__title">PHPStorm</h2>
           <p class="tool__tier">Free</p>
           <p class="tool__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
           <div class="tool__wrapper">
@@ -195,8 +140,8 @@
           <a href="#" class="tool__visit">Visit</a>
         </article>
         <article class="tool">
-          <img src="<%=require('./images/tool-figma.svg')%>" alt="Figma" class="tool__img">
-          <h2 class="tool__title">Figma</h2>
+          <img src="<%=require('./images/fixtures/13-toolbox.png')%>" alt="Toolbox" class="tool__img">
+          <h2 class="tool__title">Toolbox</h2>
           <p class="tool__tier">Free</p>
           <p class="tool__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
           <div class="tool__wrapper">
@@ -206,19 +151,8 @@
           <a href="#" class="tool__visit">Visit</a>
         </article>
         <article class="tool">
-          <img src="<%=require('./images/tool-figma.svg')%>" alt="Figma" class="tool__img">
-          <h2 class="tool__title">Figma</h2>
-          <p class="tool__tier">Free</p>
-          <p class="tool__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-          <div class="tool__wrapper">
-            <button class="tool__button tool__button_like"></button>
-            <button class="tool__button tool__button_folder"></button>
-          </div>
-          <a href="#" class="tool__visit">Visit</a>
-        </article>
-        <article class="tool">
-          <img src="<%=require('./images/tool-figma.svg')%>" alt="Figma" class="tool__img">
-          <h2 class="tool__title">Figma</h2>
+          <img src="<%=require('./images/fixtures/14-procreate.png')%>" alt="Procreate" class="tool__img">
+          <h2 class="tool__title">Procreate</h2>
           <p class="tool__tier">Free</p>
           <p class="tool__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
           <div class="tool__wrapper">
@@ -296,7 +230,8 @@
       <ul class="footer__list">
         <li class="footer__list-item"><a href="tel:+621987463" class="footer__list-link">+621987463</a></li>
         <li class="footer__list-item">M Building, No.10 A</li>
-        <li class="footer__list-item"><a href="mailto:antools@awesome.com" class="footer__list-link">antools@awesome.com</a></li>
+        <li class="footer__list-item"><a href="mailto:antools@awesome.com"
+            class="footer__list-link">antools@awesome.com</a></li>
       </ul>
     </div>
 
@@ -319,5 +254,20 @@
       </div>
     </nav>
   </footer>
+
+  <template id="tool">
+    <article class="tool">
+      <img src="#" alt="#" class="tool__img">
+      <h2 class="tool__title"></h2>
+      <p class="tool__tier"></p>
+      <p class="tool__description"></p>
+      <div class="tool__wrapper">
+        <button class="tool__button tool__button_like tool__like"></button>
+        <button class="tool__button tool__button_folder"></button>
+      </div>
+      <a href="#" class="tool__visit">Visit</a>
+    </article>
+  </template>
+
 
 </html>

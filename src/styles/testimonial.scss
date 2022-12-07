@@ -11,14 +11,19 @@
 
     transition: $transition-main;
 
+    height: 100%;
+
     &:hover {
       transform: scale(1.1);
+    }
+
+    &_active {
+      cursor: pointer;
     }
 
     &_active path {
       stroke: #ff6e30;
       stroke-opacity: 1;
-      cursor: pointer;
     }
   }
 
@@ -164,7 +169,3 @@
     }
   }
 }
-
-// .testimonial, .testimonial * {
-//   outline: 1px dashed maroon;;
-// }
