@@ -3,7 +3,7 @@
 ## Description
 Test task for DevCrew
 
-Non responsible web layout from figma desgign.
+Non responsible web layout from figma design.
 
 ![Figma layout](https://i.postimg.cc/L8m7cvtP/Screenshot-2022-12-07-at-15-51-54.png)
 
