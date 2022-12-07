@@ -127,20 +127,16 @@
   &__visit {
     grid-column: 3/-1;
     grid-row: 4/5;
+    justify-self: end;
 
     font-weight: 600;
     font-size: 16px;
-
-    color: $text-color-light;
-
     text-decoration: none;
-
-    justify-self: end;
-
-    padding: 8px 32px;
+    color: $text-color-light;
 
     border-radius: 8px;
     padding: 9px 35px;
+    max-height: 26px;
 
     &:hover {
       text-decoration: underline;

@@ -5,13 +5,23 @@ import imgNotion from '../../images/fixtures/04-notion.png';
 import imgSlack from '../../images/fixtures/05-slack.png';
 import imgInvision from '../../images/fixtures/06-invision.png';
 
+import imgTestimonial from '../../images/fixtures/testimonial-portrait.png'
+
+/** Selectors */
+export const toolsWrapperSelector = 'popular__wrapper';
+export const toolsTemplateSelector = '#tool';
+export const toolBtnMoreSelector = '#btn-load-more';
+
+/** Hardcode initial data */
+
+// tool items list
 export const toolList = [
   {
     name: 'Figma',
     tier: 'Free',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     img: imgFigma,
-    link: '',
+    link: 'ya.ru',
     isLiked: false
   },
   {
@@ -56,7 +66,24 @@ export const toolList = [
   },
 ];
 
-/** Selectors */
-export const toolsWrapperSelector = 'popular__wrapper';
-export const toolsTemplateSelector = '#tool';
-export const toolBtnMoreSelector = '#btn-load-more';
+// testimonial data
+export const testimonialList = [
+  {
+    name: 'Ronald Richards',
+    position: 'Product Manager',
+    description: 'Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.',
+    img: imgTestimonial,
+  },
+  {
+    name: 'Ronald Richards IInd',
+    position: 'PM middle',
+    description: 'Incididunt cillum do sint sin occaecat. Do nulla velit labore occaecat do deserunt Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.',
+    img: imgTestimonial,
+  },
+  {
+    name: 'Ronald Richards IIIrd',
+    position: 'PM senior',
+    description: 'Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cill',
+    img: imgTestimonial,
+  },
+];

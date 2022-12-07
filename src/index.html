@@ -8,14 +8,6 @@
   <meta name="description"
     content="Antool is a web collection of information on paid or free Design and Development tools">
   <title>antools</title>
-
-  <!-- basic FUOC font rendering fix (see release in index.js) -->
-  <style>
-    body {
-      visibility: hidden;
-    }
-  </style>
-
 </head>
 
 <body class="root">
@@ -174,7 +166,7 @@
       <div class="testimonial__wrapper">
         <div class="testimonial__summary">
           <div class="testimonial__placeholder"></div>
-          <img src="<%=require('./images/testimonial-portrait.png')%>" alt="Ronald" class="testimonial__portrait">
+          <img src="<%=require('./images/fixtures/testimonial-portrait.png')%>" alt="Ronald" class="testimonial__portrait">
           <div class="testimonial__bio">
             <h2 class="testimonial__name">Ronald Richards</h2>
             <p class="testimonial__position">Product manager</p>
@@ -187,10 +179,14 @@
             magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute
             officia excepteur non laboris id qui ad.</p>
         </div>
+
         <ul class="testimonial__page">
-          <li class="testimonial__page-item"></li>
+          <template id="testimonial-paginator">
+            <li class="testimonial__page-item"></li>
+          </template>
+          <!-- <li class="testimonial__page-item"></li>
           <li class="testimonial__page-item testimonial__page-item_active"></li>
-          <li class="testimonial__page-item"></li>
+          <li class="testimonial__page-item"></li> -->
         </ul>
       </div>
 

@@ -1,13 +1,15 @@
 // components
 import Section from './scripts/components/Section';
 import Card from './scripts/components/Card';
+import Slider from './scripts/components/Slider';
 
 // utils
 import {
   toolList,
   toolsWrapperSelector,
   toolsTemplateSelector,
-  toolBtnMoreSelector
+  toolBtnMoreSelector,
+  testimonialList,
 } from './scripts/utils/data';
 
 // styles and images
@@ -30,6 +32,10 @@ const toolSection = new Section(
 
 toolSection.render();
 
+/* Slider init */
+const sliderTestimonial = new Slider({});
+sliderTestimonial.loadCards(testimonialList);
+
 /* Functions */
 // creates new instance of Card
 function createTool(item) {
@@ -49,11 +55,3 @@ function handleBtnMoreTool(){
 
 // event listeners
 toolBtnMoreElement.addEventListener('click',handleBtnMoreTool);
-
-// easy FUOC fix (see index.html style tag)
-function handleFuoc() {
-  let body = document.querySelector('body');
-  body.style.visibility = 'visible';
-}
-
-window.addEventListener('load', handleFuoc);
